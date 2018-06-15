@@ -22,6 +22,6 @@ import "phoenix_html"
 import React from "react";
 import ReactDOM from "react-dom";
 
-import Jumbotron from './components/Jumbotron';
+import Jumbotron from './components/jumbotron';
 
 ReactDOM.render(<Jumbotron />, document.getElementById("react-app"));

@@ -13,7 +13,7 @@ config :logger, level: :warn
 config :mezze, Mezze.Repo,
   adapter: Ecto.Adapters.Postgres,
   username: "postgres",
-  password: "postgres",
+  password: "chretien",
   database: "mezze_test",
   hostname: "localhost",
   pool: Ecto.Adapters.SQL.Sandbox

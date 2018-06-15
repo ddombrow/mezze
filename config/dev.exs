@@ -11,8 +11,7 @@ config :mezze, MezzeWeb.Endpoint,
   debug_errors: true,
   code_reloader: true,
   check_origin: false,
-  watchers: [node: ["node_modules/webpack/bin/webpack.js", "--mode", "development", "--watch-stdin",
-  cd: Path.expand("../assets", __DIR__)]]
+  watchers: [npm: ["run", "watch", cd: Path.expand("../assets", __DIR__)]]
 
 
 # ## SSL Support
@@ -53,7 +52,7 @@ config :phoenix, :stacktrace_depth, 20
 config :mezze, Mezze.Repo,
   adapter: Ecto.Adapters.Postgres,
   username: "postgres",
-  password: "postgres",
+  password: "chretien",
   database: "mezze_dev",
   hostname: "localhost",
   pool_size: 10
